@@ -1,212 +1,167 @@
 <!DOCTYPE html>
-<html lang="uk" class="scroll-smooth">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PAW STAY - Готель для собак преміум-класу</title>
     
-    <!-- Fonts & Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            bg: '#F3F0EC',
-                            green: '#2A3B2A',
-                            greenlight: '#405640',
-                            gold: '#E3C8A5',
-                            goldhover: '#D4B38A',
-                            text: '#1C1B1B',
-                            textlight: '#5A5A5A',
-                            white: '#FFFFFF',
-                            card: '#FCF9F8'
-                        }
-                    },
-                    boxShadow: {
-                        'soft': '0 8px 30px rgba(42, 59, 42, 0.05)',
-                        'medium': '0 10px 40px rgba(42, 59, 42, 0.08)',
-                    }
-                }
-            }
-        }
-    </script>
-    
-    <style>
-        body {
-            background-color: #F3F0EC;
-            color: #1C1B1B;
-        }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-        }
-        .icon-filled {
-            font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="antialiased font-sans flex flex-col min-h-screen">
+<body>
 
     <!-- Header -->
-    <header class="fixed top-0 w-full z-50 bg-brand-bg/80 backdrop-blur-md transition-all duration-300">
-        <div class="max-w-[1440px] mx-auto px-6 md:px-12 py-5 flex justify-between items-center">
+    <header class="header">
+        <div class="header-content container">
             <!-- Logo -->
-            <a href="#" class="flex items-center gap-2 group">
-                <span class="material-symbols-outlined icon-filled text-brand-green text-3xl group-hover:scale-110 transition-transform">pets</span>
-                <div class="flex flex-col">
-                    <span class="text-xl font-bold tracking-wider leading-none">PAW STAY</span>
-                    <span class="text-[10px] uppercase tracking-[0.2em] text-brand-textlight mt-1">DOG HOTEL</span>
+            <a href="#" class="logo">
+                <span class="material-symbols-outlined icon-filled logo-icon">pets</span>
+                <div class="logo-text">
+                    <span class="logo-title">PAW STAY</span>
+                    <span class="logo-subtitle">DOG HOTEL</span>
                 </div>
             </a>
             
             <!-- Navigation -->
-            <nav class="hidden lg:flex gap-8 items-center">
-                <a href="#" class="text-sm font-medium hover:text-brand-green transition-colors">Про нас</a>
-                <a href="#" class="text-sm font-medium hover:text-brand-green transition-colors">Номери</a>
-                <a href="#" class="text-sm font-medium hover:text-brand-green transition-colors">Послуги</a>
-                <a href="#" class="text-sm font-medium hover:text-brand-green transition-colors">Процес проживання</a>
-                <a href="#" class="text-sm font-medium hover:text-brand-green transition-colors">Відгуки</a>
-                <a href="#" class="text-sm font-medium hover:text-brand-green transition-colors">Контакти</a>
+            <nav class="nav-links">
+                <a href="#" class="nav-link">Про нас</a>
+                <a href="#" class="nav-link">Номери</a>
+                <a href="#" class="nav-link">Послуги</a>
+                <a href="#" class="nav-link">Процес проживання</a>
+                <a href="#" class="nav-link">Відгуки</a>
+                <a href="#" class="nav-link">Контакти</a>
             </nav>
             
             <!-- Actions -->
-            <div class="hidden md:flex items-center gap-6">
-                <a href="tel:+380501234567" class="text-sm font-bold hover:text-brand-greenlight transition-colors">+38 (050) 123 45 67</a>
-                <a href="#" class="bg-brand-gold text-brand-text px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-brand-goldhover hover:-translate-y-0.5 transition-all shadow-sm">
-                    Забронювати
-                </a>
+            <div class="header-actions">
+                <a href="tel:+380501234567" class="phone-link">+38 (050) 123 45 67</a>
+                <a href="#" class="btn-primary">Забронювати</a>
             </div>
             
             <!-- Mobile Menu Button -->
-            <button class="lg:hidden text-brand-green p-2">
-                <span class="material-symbols-outlined text-3xl">menu</span>
+            <button class="menu-btn">
+                <span class="material-symbols-outlined">menu</span>
             </button>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="flex-grow pt-28">
+    <main>
         
         <!-- Hero Section -->
-        <section class="max-w-[1440px] mx-auto px-6 md:px-12 py-12 lg:py-20 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-            
-            <div class="lg:w-1/2 flex flex-col items-start z-10">
-                <span class="text-sm font-medium text-brand-textlight mb-4">Готель для собак преміум-класу</span>
-                <h1 class="text-5xl lg:text-7xl font-bold leading-[1.1] mb-6">Другий дім<br/>для вашого улюбленця <span class="material-symbols-outlined icon-filled text-brand-green text-5xl align-middle">favorite</span></h1>
+        <section class="hero container">
+            <div class="hero-content">
+                <span class="hero-badge">Готель для собак преміум-класу</span>
+                <h1 class="hero-title">
+                    Другий дім<br/>
+                    для вашого улюбленця 
+                    <span class="material-symbols-outlined icon-filled">favorite</span>
+                </h1>
                 
-                <p class="text-lg text-brand-textlight mb-10 max-w-md">
+                <p class="hero-desc">
                     Комфортне проживання, турбота 24/7 та багато любові, поки ви зайняті своїми справами.
                 </p>
                 
-                <div class="flex flex-wrap items-center gap-4 mb-16">
-                    <a href="#" class="bg-brand-green text-white px-8 py-4 rounded-full font-semibold hover:bg-brand-greenlight hover:-translate-y-1 transition-all shadow-medium flex items-center gap-2">
-                        Забронювати номер <span class="material-symbols-outlined icon-filled text-sm">pets</span>
+                <div class="hero-buttons">
+                    <a href="#" class="btn-dark">
+                        Забронювати номер <span class="material-symbols-outlined icon-filled">pets</span>
                     </a>
-                    <a href="#" class="px-6 py-4 rounded-full font-medium hover:bg-black/5 transition-all flex items-center gap-2">
-                        Дізнатися більше <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    <a href="#" class="btn-outline">
+                        Дізнатися більше <span class="material-symbols-outlined">arrow_forward</span>
                     </a>
                 </div>
                 
                 <!-- Features row -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full border-t border-black/10 pt-8">
-                    <div class="flex flex-col gap-2">
-                        <div class="w-12 h-12 rounded-full border border-black/10 flex items-center justify-center mb-2">
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <div class="feature-icon-wrapper">
                             <span class="material-symbols-outlined">videocam</span>
                         </div>
-                        <h4 class="font-bold text-sm">Відеонагляд 24/7</h4>
-                        <p class="text-xs text-brand-textlight">Слідкуйте за своїм улюбленцем онлайн</p>
+                        <h4 class="feature-title">Відеонагляд 24/7</h4>
+                        <p class="feature-desc">Слідкуйте за своїм улюбленцем онлайн</p>
                     </div>
-                    <div class="flex flex-col gap-2">
-                        <div class="w-12 h-12 rounded-full border border-black/10 flex items-center justify-center mb-2">
+                    <div class="feature-item">
+                        <div class="feature-icon-wrapper">
                             <span class="material-symbols-outlined">verified_user</span>
                         </div>
-                        <h4 class="font-bold text-sm">Безпека понад усе</h4>
-                        <p class="text-xs text-brand-textlight">Закрита територія та контроль доступу</p>
+                        <h4 class="feature-title">Безпека понад усе</h4>
+                        <p class="feature-desc">Закрита територія та контроль доступу</p>
                     </div>
-                    <div class="flex flex-col gap-2">
-                        <div class="w-12 h-12 rounded-full border border-black/10 flex items-center justify-center mb-2">
+                    <div class="feature-item">
+                        <div class="feature-icon-wrapper">
                             <span class="material-symbols-outlined">favorite_border</span>
                         </div>
-                        <h4 class="font-bold text-sm">Індивідуальний підхід</h4>
-                        <p class="text-xs text-brand-textlight">Враховуємо характер та потреби кожного</p>
+                        <h4 class="feature-title">Індивідуальний підхід</h4>
+                        <p class="feature-desc">Враховуємо характер та потреби кожного</p>
                     </div>
                 </div>
             </div>
             
-            <div class="lg:w-1/2 relative w-full aspect-[4/3] lg:aspect-auto lg:h-[700px] rounded-[40px] overflow-hidden shadow-2xl">
-                <img src="hero_dog.png" alt="Happy dog on a bed" class="w-full h-full object-cover">
+            <div class="hero-image-container">
+                <div class="hero-image">
+                    <img src="hero_dog.png" alt="Happy dog on a bed">
+                </div>
             </div>
-            
         </section>
 
         <!-- Rooms Section -->
-        <section class="bg-brand-card py-20 lg:py-32 rounded-t-[60px]">
-            <div class="max-w-[1440px] mx-auto px-6 md:px-12">
-                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+        <section class="rooms">
+            <div class="container">
+                <div class="section-header">
                     <div>
-                        <h2 class="text-4xl lg:text-5xl font-bold mb-4">Наші номери</h2>
-                        <p class="text-brand-textlight max-w-md">
+                        <h2 class="section-title">Наші номери</h2>
+                        <p class="section-desc">
                             Кожен номер створений для максимального комфорту вашого улюбленця.
                         </p>
                     </div>
-                    <a href="#" class="px-8 py-3 rounded-full border border-black/20 font-medium hover:bg-black/5 transition-all flex items-center gap-2">
-                        Переглянути всі номери <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    <a href="#" class="btn-outline">
+                        Переглянути всі номери <span class="material-symbols-outlined">arrow_forward</span>
                     </a>
                 </div>
                 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="rooms-grid">
                     <!-- Standard -->
-                    <div class="bg-brand-bg rounded-3xl overflow-hidden hover:-translate-y-2 transition-transform duration-300">
-                        <div class="h-64 overflow-hidden relative">
-                            <img src="room_standard.png" alt="Standard Room" class="w-full h-full object-cover">
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="room_standard.png" alt="Standard Room">
                         </div>
-                        <div class="p-8">
-                            <div class="flex justify-between items-end mb-4">
-                                <h3 class="text-2xl font-bold">Стандарт</h3>
-                                <span class="text-sm font-medium text-brand-textlight">від <span class="text-brand-text font-bold">550 грн</span>/доба</span>
+                        <div class="room-info">
+                            <div class="room-header">
+                                <h3 class="room-title">Стандарт</h3>
+                                <span class="room-price">від <strong>550 грн</strong>/доба</span>
                             </div>
-                            <p class="text-brand-textlight text-sm line-clamp-3">
+                            <p class="room-desc">
                                 Затишний номер для комфортного відпочинку та сну.
                             </p>
                         </div>
                     </div>
                     
                     <!-- Superior -->
-                    <div class="bg-brand-bg rounded-3xl overflow-hidden hover:-translate-y-2 transition-transform duration-300">
-                        <div class="h-64 overflow-hidden relative">
-                            <img src="room_superior.png" alt="Superior Room" class="w-full h-full object-cover">
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="room_superior.png" alt="Superior Room">
                         </div>
-                        <div class="p-8">
-                            <div class="flex justify-between items-end mb-4">
-                                <h3 class="text-2xl font-bold">Покращений</h3>
-                                <span class="text-sm font-medium text-brand-textlight">від <span class="text-brand-text font-bold">750 грн</span>/доба</span>
+                        <div class="room-info">
+                            <div class="room-header">
+                                <h3 class="room-title">Покращений</h3>
+                                <span class="room-price">від <strong>750 грн</strong>/доба</span>
                             </div>
-                            <p class="text-brand-textlight text-sm line-clamp-3">
+                            <p class="room-desc">
                                 Більше простору та додаткові зручності для вашого улюбленця.
                             </p>
                         </div>
                     </div>
                     
                     <!-- Lux -->
-                    <div class="bg-brand-bg rounded-3xl overflow-hidden hover:-translate-y-2 transition-transform duration-300">
-                        <div class="h-64 overflow-hidden relative">
-                            <img src="room_lux.png" alt="Lux Room" class="w-full h-full object-cover">
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="room_lux.png" alt="Lux Room">
                         </div>
-                        <div class="p-8">
-                            <div class="flex justify-between items-end mb-4">
-                                <h3 class="text-2xl font-bold">Люкс</h3>
-                                <span class="text-sm font-medium text-brand-textlight">від <span class="text-brand-text font-bold">1100 грн</span>/доба</span>
+                        <div class="room-info">
+                            <div class="room-header">
+                                <h3 class="room-title">Люкс</h3>
+                                <span class="room-price">від <strong>1100 грн</strong>/доба</span>
                             </div>
-                            <p class="text-brand-textlight text-sm line-clamp-3">
+                            <p class="room-desc">
                                 Максимальний комфорт, простір та індивідуальна увага.
                             </p>
                         </div>
@@ -216,48 +171,40 @@
         </section>
 
         <!-- What's included Section -->
-        <section class="py-20 lg:py-32">
-            <div class="max-w-[1440px] mx-auto px-6 md:px-12 border-b border-black/10 pb-20">
-                <h2 class="text-3xl lg:text-4xl font-bold mb-16">Що входить у проживання</h2>
+        <section class="inclusions">
+            <div class="container">
+                <h2 class="section-title">Що входить у проживання</h2>
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-                    <div class="flex items-start gap-4">
-                        <div class="text-4xl text-brand-green">
-                            <span class="material-symbols-outlined text-5xl">restaurant</span>
-                        </div>
+                <div class="inclusions-grid">
+                    <div class="inclusion-item">
+                        <span class="material-symbols-outlined inclusion-icon">restaurant</span>
                         <div>
-                            <h4 class="font-bold mb-2">Харчування преміум-класу</h4>
-                            <p class="text-sm text-brand-textlight">Збалансоване меню, враховуючи потреби та вподобання</p>
+                            <h4 class="inclusion-title">Харчування преміум-класу</h4>
+                            <p class="inclusion-desc">Збалансоване меню, враховуючи потреби та вподобання</p>
                         </div>
                     </div>
                     
-                    <div class="flex items-start gap-4">
-                        <div class="text-4xl text-brand-green">
-                            <span class="material-symbols-outlined text-5xl">cruelty_free</span>
-                        </div>
+                    <div class="inclusion-item">
+                        <span class="material-symbols-outlined inclusion-icon">cruelty_free</span>
                         <div>
-                            <h4 class="font-bold mb-2">Прогулянки та ігри</h4>
-                            <p class="text-sm text-brand-textlight">Активні прогулянки та веселі ігри щодня</p>
+                            <h4 class="inclusion-title">Прогулянки та ігри</h4>
+                            <p class="inclusion-desc">Активні прогулянки та веселі ігри щодня</p>
                         </div>
                     </div>
                     
-                    <div class="flex items-start gap-4">
-                        <div class="text-4xl text-brand-green">
-                            <span class="material-symbols-outlined text-5xl">health_and_safety</span>
-                        </div>
+                    <div class="inclusion-item">
+                        <span class="material-symbols-outlined inclusion-icon">health_and_safety</span>
                         <div>
-                            <h4 class="font-bold mb-2">Турбота та догляд</h4>
-                            <p class="text-sm text-brand-textlight">Гігієна, розчісування та багато уваги та любові</p>
+                            <h4 class="inclusion-title">Турбота та догляд</h4>
+                            <p class="inclusion-desc">Гігієна, розчісування та багато уваги та любові</p>
                         </div>
                     </div>
                     
-                    <div class="flex items-start gap-4">
-                        <div class="text-4xl text-brand-green">
-                            <span class="material-symbols-outlined text-5xl">photo_camera</span>
-                        </div>
+                    <div class="inclusion-item">
+                        <span class="material-symbols-outlined inclusion-icon">photo_camera</span>
                         <div>
-                            <h4 class="font-bold mb-2">Щоденний фото/відеозвіт</h4>
-                            <p class="text-sm text-brand-textlight">Будьте спокійні — ми надсилаємо оновлення щодня</p>
+                            <h4 class="inclusion-title">Щоденний фото/відеозвіт</h4>
+                            <p class="inclusion-desc">Будьте спокійні — ми надсилаємо оновлення щодня</p>
                         </div>
                     </div>
                 </div>
@@ -265,73 +212,67 @@
         </section>
 
         <!-- Testimonials Section -->
-        <section class="bg-brand-card py-20 lg:py-32">
-            <div class="max-w-[1440px] mx-auto px-6 md:px-12">
-                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-                    <h2 class="text-4xl lg:text-5xl font-bold flex items-center gap-2">
-                        Щасливі хвостики, щасливі власники <span class="material-symbols-outlined icon-filled text-brand-green">favorite</span>
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title testimonials-header">
+                        Щасливі хвостики, щасливі власники <span class="material-symbols-outlined icon-filled">favorite</span>
                     </h2>
-                    <a href="#" class="px-8 py-3 rounded-full border border-black/20 font-medium hover:bg-black/5 transition-all flex items-center gap-2 whitespace-nowrap">
-                        Дивитися всі відгуки <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    <a href="#" class="btn-outline">
+                        Дивитися всі відгуки <span class="material-symbols-outlined">arrow_forward</span>
                     </a>
                 </div>
                 
-                <div class="relative flex items-center gap-6">
-                    <button class="w-12 h-12 bg-white rounded-full shadow-soft flex items-center justify-center hover:scale-105 transition-transform hidden md:flex shrink-0 z-10">
+                <div class="slider-container">
+                    <button class="slider-btn left">
                         <span class="material-symbols-outlined">chevron_left</span>
                     </button>
                     
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 flex-grow">
+                    <div class="testimonials-grid">
                         <!-- Review 1 -->
-                        <div class="bg-white p-8 rounded-3xl shadow-soft">
-                            <div class="flex items-center gap-4 mb-6">
-                                <img src="avatar_1.png" alt="Олена" class="w-14 h-14 rounded-full object-cover">
+                        <div class="testimonial-card">
+                            <div class="testimonial-author">
+                                <img src="avatar_1.png" alt="Олена" class="author-avatar">
                                 <div>
-                                    <h4 class="font-bold">Олена та Боні</h4>
-                                    <div class="flex text-brand-gold text-lg">
-                                        ★★★★★
-                                    </div>
+                                    <h4 class="author-name">Олена та Боні</h4>
+                                    <div class="author-rating">★★★★★</div>
                                 </div>
                             </div>
-                            <p class="text-brand-textlight italic">
+                            <p class="testimonial-text">
                                 "Дякуємо Paw Stay за турботу про нашого Боні! Він завжди щасливий повертатися до вас знову."
                             </p>
                         </div>
                         
                         <!-- Review 2 -->
-                        <div class="bg-white p-8 rounded-3xl shadow-soft">
-                            <div class="flex items-center gap-4 mb-6">
-                                <img src="avatar_2.png" alt="Максим" class="w-14 h-14 rounded-full object-cover">
+                        <div class="testimonial-card">
+                            <div class="testimonial-author">
+                                <img src="avatar_2.png" alt="Максим" class="author-avatar">
                                 <div>
-                                    <h4 class="font-bold">Максим та Рекс</h4>
-                                    <div class="flex text-brand-gold text-lg">
-                                        ★★★★★
-                                    </div>
+                                    <h4 class="author-name">Максим та Рекс</h4>
+                                    <div class="author-rating">★★★★★</div>
                                 </div>
                             </div>
-                            <p class="text-brand-textlight italic">
+                            <p class="testimonial-text">
                                 "Найкраще місце для нашого Рекса! Тут йому як удома, тільки з ще більшою увагою."
                             </p>
                         </div>
                         
                         <!-- Review 3 -->
-                        <div class="bg-white p-8 rounded-3xl shadow-soft">
-                            <div class="flex items-center gap-4 mb-6">
-                                <img src="avatar_3.png" alt="Ірина" class="w-14 h-14 rounded-full object-cover">
+                        <div class="testimonial-card">
+                            <div class="testimonial-author">
+                                <img src="avatar_3.png" alt="Ірина" class="author-avatar">
                                 <div>
-                                    <h4 class="font-bold">Ірина та Луна</h4>
-                                    <div class="flex text-brand-gold text-lg">
-                                        ★★★★★
-                                    </div>
+                                    <h4 class="author-name">Ірина та Луна</h4>
+                                    <div class="author-rating">★★★★★</div>
                                 </div>
                             </div>
-                            <p class="text-brand-textlight italic">
+                            <p class="testimonial-text">
                                 "Залишаємо Луну тільки тут. Спокійні, коли вона в надійних та люблячих руках."
                             </p>
                         </div>
                     </div>
                     
-                    <button class="w-12 h-12 bg-white rounded-full shadow-soft flex items-center justify-center hover:scale-105 transition-transform hidden md:flex shrink-0 z-10">
+                    <button class="slider-btn right">
                         <span class="material-symbols-outlined">chevron_right</span>
                     </button>
                 </div>
@@ -339,32 +280,29 @@
         </section>
 
         <!-- CTA Section -->
-        <section class="max-w-[1440px] mx-auto px-6 md:px-12 py-12 lg:pb-32 lg:pt-12">
-            <div class="bg-brand-green rounded-[40px] p-8 lg:p-16 flex flex-col md:flex-row items-center justify-between gap-12 relative overflow-hidden">
-                <!-- Background decor -->
-                <div class="absolute -right-20 -bottom-20 opacity-5 pointer-events-none">
-                    <span class="material-symbols-outlined icon-filled text-[300px]">pets</span>
-                </div>
-                
-                <div class="md:w-1/3 relative z-10 -ml-16 -mt-16 lg:-ml-24 lg:-mb-32">
-                    <div class="w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden border-8 border-brand-green relative">
-                        <img src="cta_dog.png" alt="Happy Golden Retriever" class="w-full h-full object-cover">
-                    </div>
-                </div>
-                
-                <div class="md:w-2/3 flex flex-col md:flex-row items-center md:items-start md:justify-between w-full gap-8 relative z-10">
-                    <div class="flex-grow max-w-xl text-center md:text-left">
-                        <h2 class="text-3xl lg:text-5xl font-bold text-white mb-4">Готові подарувати своєму улюбленцю найкращий відпочинок?</h2>
-                        <p class="text-white/80">Забронюйте номер вже сьогодні та будьте спокійні за свого друга, де б ви не були.</p>
+        <section class="cta">
+            <div class="container">
+                <div class="cta-box">
+                    <span class="material-symbols-outlined icon-filled cta-bg-icon">pets</span>
+                    
+                    <div class="cta-image-wrapper">
+                        <img src="cta_dog.png" alt="Happy Golden Retriever" class="cta-image">
                     </div>
                     
-                    <div class="flex flex-col items-center md:items-end gap-4 shrink-0">
-                        <a href="#" class="bg-brand-gold text-brand-text px-8 py-4 rounded-full font-bold hover:bg-brand-goldhover hover:-translate-y-1 transition-all shadow-medium flex items-center gap-2 whitespace-nowrap">
-                            Забронювати номер <span class="material-symbols-outlined icon-filled text-sm">pets</span>
-                        </a>
-                        <div class="text-white text-center md:text-right">
-                            <span class="text-sm opacity-80 block mb-1">або зателефонуйте нам</span>
-                            <a href="tel:+380501234567" class="text-xl font-bold hover:text-brand-gold transition-colors">+38 (050) 123 45 67</a>
+                    <div class="cta-content">
+                        <div class="cta-text">
+                            <h2 class="cta-title">Готові подарувати своєму улюбленцю найкращий відпочинок?</h2>
+                            <p class="cta-desc">Забронюйте номер вже сьогодні та будьте спокійні за свого друга, де б ви не були.</p>
+                        </div>
+                        
+                        <div class="cta-actions">
+                            <a href="#" class="btn-primary">
+                                Забронювати номер <span class="material-symbols-outlined icon-filled">pets</span>
+                            </a>
+                            <div class="cta-contact">
+                                <span>або зателефонуйте нам</span>
+                                <a href="tel:+380501234567">+38 (050) 123 45 67</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -374,43 +312,44 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-brand-card pt-16 pb-8 border-t border-black/5">
-        <div class="max-w-[1440px] mx-auto px-6 md:px-12">
-            <div class="flex flex-col md:flex-row justify-between items-center md:items-start gap-8 mb-12">
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
                 <!-- Logo -->
-                <a href="#" class="flex items-center gap-2 group">
-                    <span class="material-symbols-outlined icon-filled text-brand-green text-3xl">pets</span>
-                    <div class="flex flex-col">
-                        <span class="text-xl font-bold tracking-wider leading-none">PAW STAY</span>
-                        <span class="text-[10px] uppercase tracking-[0.2em] text-brand-textlight mt-1">DOG HOTEL</span>
+                <a href="#" class="logo">
+                    <span class="material-symbols-outlined icon-filled logo-icon">pets</span>
+                    <div class="logo-text">
+                        <span class="logo-title">PAW STAY</span>
+                        <span class="logo-subtitle">DOG HOTEL</span>
                     </div>
                 </a>
                 
                 <!-- Links -->
-                <div class="flex flex-wrap justify-center gap-6 md:gap-12 text-sm font-medium">
-                    <a href="#" class="hover:text-brand-green transition-colors">Політика конфіденційності</a>
-                    <a href="#" class="hover:text-brand-green transition-colors">Умови використання</a>
+                <div class="footer-links">
+                    <a href="#">Політика конфіденційності</a>
+                    <a href="#">Умови використання</a>
                 </div>
                 
                 <!-- Social -->
-                <div class="flex gap-4">
-                    <a href="#" class="w-10 h-10 border border-black/20 rounded-full flex items-center justify-center hover:bg-brand-green hover:text-white hover:border-brand-green transition-all">
-                        <span class="material-symbols-outlined text-[20px]">photo_camera</span>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">
+                        <span class="material-symbols-outlined">photo_camera</span>
                     </a>
-                    <a href="#" class="w-10 h-10 border border-black/20 rounded-full flex items-center justify-center hover:bg-brand-green hover:text-white hover:border-brand-green transition-all">
-                        <span class="material-symbols-outlined text-[20px]">facebook</span>
+                    <a href="#" class="social-icon">
+                        <span class="material-symbols-outlined">facebook</span>
                     </a>
-                    <a href="#" class="w-10 h-10 border border-black/20 rounded-full flex items-center justify-center hover:bg-brand-green hover:text-white hover:border-brand-green transition-all">
-                        <span class="material-symbols-outlined text-[20px]">send</span>
+                    <a href="#" class="social-icon">
+                        <span class="material-symbols-outlined">send</span>
                     </a>
                 </div>
             </div>
             
-            <div class="text-center text-sm text-brand-textlight">
+            <div class="footer-bottom">
                 © 2024 Paw Stay. Усі права захищені.
             </div>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
