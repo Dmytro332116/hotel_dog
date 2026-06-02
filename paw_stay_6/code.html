@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html class="light" lang="uk"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Правила та Безпека - PAW STAY</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-on-surface": "#f3f0ef",
+                    "surface-bright": "#fcf9f8",
+                    "primary": "#243624",
+                    "tertiary-fixed-dim": "#c9c6c1",
+                    "on-secondary-fixed": "#2c1600",
+                    "on-primary-fixed-variant": "#394b38",
+                    "on-primary-container": "#a7bda4",
+                    "secondary-container": "#ffca98",
+                    "surface-container": "#f0eded",
+                    "background": "#fcf9f8",
+                    "on-surface-variant": "#434842",
+                    "on-background": "#1c1b1b",
+                    "inverse-surface": "#313030",
+                    "tertiary-fixed": "#e6e2dd",
+                    "surface-container-low": "#f6f3f2",
+                    "secondary": "#7d562d",
+                    "tertiary": "#33322f",
+                    "primary-container": "#3a4d39",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-fixed-variant": "#623f18",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed-dim": "#f0bd8b",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-container": "#bab7b2",
+                    "tertiary-container": "#494845",
+                    "primary-fixed-dim": "#b7cdb2",
+                    "on-error": "#ffffff",
+                    "on-secondary-container": "#7a532a",
+                    "error": "#ba1a1a",
+                    "on-tertiary": "#ffffff",
+                    "surface-tint": "#50634e",
+                    "on-primary-fixed": "#0e1f0f",
+                    "secondary-fixed": "#ffdcbd",
+                    "on-tertiary-fixed": "#1c1c19",
+                    "outline": "#747871",
+                    "on-surface": "#1c1b1b",
+                    "surface-variant": "#e5e2e1",
+                    "inverse-primary": "#b7cdb2",
+                    "surface-container-highest": "#e5e2e1",
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#dcd9d9",
+                    "outline-variant": "#c3c8bf",
+                    "surface-container-high": "#eae7e7",
+                    "primary-fixed": "#d2e9ce",
+                    "surface": "#fcf9f8",
+                    "on-tertiary-fixed-variant": "#484743",
+                    "on-primary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "unit": "8px",
+                    "gutter": "24px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "display-lg-mobile": ["Plus Jakarta Sans"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "headline-sm": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "label-sm": ["Plus Jakarta Sans"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "label-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "600"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body { background-color: theme('colors.background'); color: theme('colors.on-background'); }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 8px 32px 0 rgba(36, 54, 36, 0.05);
+        }
+        .bento-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px 0 rgba(36, 54, 36, 0.08);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, theme('colors.primary') 0%, theme('colors.secondary') 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md antialiased overflow-x-hidden min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md shadow-sm dark:shadow-none z-50">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="text-headline-sm font-headline-sm tracking-tight text-primary dark:text-primary-fixed" href="#">PAW STAY</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant dark:text-on-surface hover:text-secondary transition-colors font-label-md text-label-md" href="#">Про нас</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-secondary transition-colors font-label-md text-label-md" href="#">Номери</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-bold border-b-2 border-secondary pb-1 font-label-md text-label-md" href="#">Послуги</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-secondary transition-colors font-label-md text-label-md" href="#">Контакти</a>
+</div>
+<button class="bg-secondary text-on-secondary px-6 py-2 rounded-full font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all shadow-sm hover:shadow-md hidden md:block">
+                Забронювати
+            </button>
+<!-- Mobile Menu Icon (Simplified for demonstration) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[100px] pb-[120px] px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<!-- Header Section -->
+<header class="text-center mb-16 md:mb-24">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary mb-4">
+                Ваша впевненість — <span class="text-gradient">наш пріоритет</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Ми створили середовище, де безпека та комфорт вашого улюбленця стоять на першому місці. Ознайомтесь із нашими правилами, щоб бути спокійними за свого друга.
+            </p>
+</header>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 auto-rows-min">
+<!-- 1. Чек-лист для заїзду (Span 7 cols) -->
+<section class="glass-card rounded-xl p-8 md:col-span-7 bento-hover transition-all duration-300 flex flex-col h-full bg-[#fcf9f8]">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">fact_check</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary">Чек-лист для заїзду</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                    Для забезпечення здоров'я всіх наших гостей, ми вимагаємо дотримання базових медичних та документальних норм при реєстрації.
+                </p>
+<ul class="space-y-4 mt-auto">
+<li class="flex items-start gap-3 bg-surface-container-low p-4 rounded-lg">
+<span class="material-symbols-outlined text-secondary mt-1">description</span>
+<div>
+<strong class="font-label-md text-label-md text-on-surface block">Ветеринарний паспорт</strong>
+<span class="font-body-md text-body-md text-on-surface-variant">З актуальними відмітками про всі необхідні процедури.</span>
+</div>
+</li>
+<li class="flex items-start gap-3 bg-surface-container-low p-4 rounded-lg">
+<span class="material-symbols-outlined text-secondary mt-1">vaccines</span>
+<div>
+<strong class="font-label-md text-label-md text-on-surface block">Комплексне щеплення</strong>
+<span class="font-body-md text-body-md text-on-surface-variant">Зроблене не пізніше ніж за 2 тижні і не раніше ніж за 1 рік до заїзду.</span>
+</div>
+</li>
+<li class="flex items-start gap-3 bg-surface-container-low p-4 rounded-lg">
+<span class="material-symbols-outlined text-secondary mt-1">pest_control</span>
+<div>
+<strong class="font-label-md text-label-md text-on-surface block">Обробка від паразитів</strong>
+<span class="font-body-md text-body-md text-on-surface-variant">Від бліх, кліщів та гельмінтів, проведена згідно з графіком.</span>
+</div>
+</li>
+</ul>
+</section>
+<!-- 2. Кого ми не приймаємо (Span 5 cols) -->
+<section class="rounded-xl p-8 md:col-span-5 bento-hover transition-all duration-300 bg-error-container/30 border border-error/10 flex flex-col h-full relative overflow-hidden">
+<div class="absolute -right-6 -top-6 text-error/5 rotate-12 pointer-events-none">
+<span class="material-symbols-outlined" style="font-size: 160px; font-variation-settings: 'FILL' 1;">block</span>
+</div>
+<div class="flex items-center gap-4 mb-6 relative z-10">
+<div class="w-12 h-12 rounded-full bg-error/10 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">do_not_disturb</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-error-container">Обмеження</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 relative z-10">
+                    Заради безпеки та спокою всіх мешканців нашого готелю, ми маємо чіткі правила щодо прийому гостей.
+                </p>
+<div class="space-y-4 relative z-10 mt-auto">
+<div class="bg-surface/80 backdrop-blur p-4 rounded-lg border border-surface-variant">
+<h3 class="font-label-md text-label-md text-error flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-sm">warning</span>
+                            Агресія
+                        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Тварини з вираженою неконтрольованою агресією до людей або інших тварин.</p>
+</div>
+<div class="bg-surface/80 backdrop-blur p-4 rounded-lg border border-surface-variant">
+<h3 class="font-label-md text-label-md text-error flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-sm">coronavirus</span>
+                            Інфекційні хвороби
+                        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Тварини з ознаками вірусних або інфекційних захворювань у гострій стадії.</p>
+</div>
+<div class="bg-surface/80 backdrop-blur p-4 rounded-lg border border-surface-variant">
+<h3 class="font-label-md text-label-md text-error flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-sm">monitor_heart</span>
+                            Тяжкі стани
+                        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Тварини, що потребують постійного інтенсивного медичного нагляду (реанімаційні стани).</p>
+</div>
+</div>
+</section>
+<!-- 3. Заходи безпеки (Span 12 cols, full width feature) -->
+<section class="glass-card rounded-xl md:col-span-12 overflow-hidden mt-4">
+<div class="grid grid-cols-1 md:grid-cols-2">
+<div class="p-8 md:p-12 flex flex-col justify-center">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">security</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary">Заходи безпеки</h2>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                            Ми інвестували в сучасні системи безпеки та протоколи догляду, щоб гарантувати бездоганний рівень захисту на всій території.
+                        </p>
+<div class="grid gap-6">
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">videocam</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface mb-1">Цілодобовий відеонагляд</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Камери високої роздільної здатності встановлені в кожному номері та на ігрових майданчиках. Ви можете спостерігати за улюбленцем онлайн 24/7.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">fence</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface mb-1">Закрита територія</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Високі надійні паркани, подвійні шлюзи на виходах та відсутність доступу сторонніх осіб гарантують, що ваш улюбленець не загубиться.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_hospital</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface mb-1">Ветеринарний контроль</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Щоденний огляд штатним лікарем та договір з цілодобовою ветеринарною клінікою, розташованою за 5 хвилин від готелю.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative min-h-[300px] md:min-h-full bg-surface-container-high overflow-hidden" data-alt="A warm, inviting, highly secure outdoor play area for dogs at a premium pet hotel. The scene is brightly lit with soft sunlight in a contemporary organic style, featuring natural wood fences, lush green grass, and discrete modern security cameras. A golden retriever looks happy and relaxed in this safe, earthy-toned environment. Light mode aesthetic with deep greens and warm beige tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAAiKT4XVDhWjBx2G31VR6Pua3OL4fSsLSSIkFvuSnVqJAidZ8Urt3fkDdeUmsunFM0QD22bupB-WVeLjeWRF2kgNirgLTq_x-McJUc2MxFiO4W0g1SByp3IrBPgEoPn_tpvNBcaWi6zvpO4Yb1nTPwaiAmlHq2QGw1298Q9-_t5G_kd-0692iwJ79hmQWwDEAlqPd8-sfawH07RbynypvbB8wsJJNF_pjMb4nbzWUIXCSOlMLTTlK9BNpMMd1aaMhaRxAadDTzqDU'); background-size: cover; background-position: center;">
+<!-- Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-r from-surface-bright/80 to-transparent md:bg-gradient-to-l md:from-transparent md:to-surface-bright/20"></div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-xl bg-surface-container dark:bg-surface-container-highest mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop py-12 max-w-container-max mx-auto">
+<div>
+<a class="text-headline-sm font-headline-sm text-primary dark:text-primary-fixed mb-4 block" href="#">PAW STAY</a>
+<p class="font-body-md text-body-md text-on-surface dark:text-on-surface-variant opacity-80">
+                    © 2024 PAW STAY. Всі права захищені.
+                </p>
+</div>
+<div class="flex flex-col gap-2">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all underline-offset-4" href="#">Про нас</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all underline-offset-4" href="#">Номери</a>
+<a class="font-body-md text-body-md text-secondary font-bold hover:underline transition-all underline-offset-4" href="#">Послуги</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all underline-offset-4" href="#">Контакти</a>
+</div>
+<div class="flex flex-col gap-2">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all underline-offset-4 flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-sm">photo_camera</span> Instagram
+                </a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all underline-offset-4 flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-sm">thumb_up</span> Facebook
+                </a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all underline-offset-4 flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-sm">send</span> Telegram
+                </a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html class="light" lang="uk"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PAW STAY - Апартаменти</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-on-surface": "#f3f0ef",
+                    "surface-bright": "#fcf9f8",
+                    "primary": "#243624",
+                    "tertiary-fixed-dim": "#c9c6c1",
+                    "on-secondary-fixed": "#2c1600",
+                    "on-primary-fixed-variant": "#394b38",
+                    "on-primary-container": "#a7bda4",
+                    "secondary-container": "#ffca98",
+                    "surface-container": "#f0eded",
+                    "background": "#fcf9f8",
+                    "on-surface-variant": "#434842",
+                    "on-background": "#1c1b1b",
+                    "inverse-surface": "#313030",
+                    "tertiary-fixed": "#e6e2dd",
+                    "surface-container-low": "#f6f3f2",
+                    "secondary": "#7d562d",
+                    "tertiary": "#33322f",
+                    "primary-container": "#3a4d39",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-fixed-variant": "#623f18",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed-dim": "#f0bd8b",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-container": "#bab7b2",
+                    "tertiary-container": "#494845",
+                    "primary-fixed-dim": "#b7cdb2",
+                    "on-error": "#ffffff",
+                    "on-secondary-container": "#7a532a",
+                    "error": "#ba1a1a",
+                    "on-tertiary": "#ffffff",
+                    "surface-tint": "#50634e",
+                    "on-primary-fixed": "#0e1f0f",
+                    "secondary-fixed": "#ffdcbd",
+                    "on-tertiary-fixed": "#1c1c19",
+                    "outline": "#747871",
+                    "on-surface": "#1c1b1b",
+                    "surface-variant": "#e5e2e1",
+                    "inverse-primary": "#b7cdb2",
+                    "surface-container-highest": "#e5e2e1",
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#dcd9d9",
+                    "outline-variant": "#c3c8bf",
+                    "surface-container-high": "#eae7e7",
+                    "primary-fixed": "#d2e9ce",
+                    "surface": "#fcf9f8",
+                    "on-tertiary-fixed-variant": "#484743",
+                    "on-primary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px",
+                    "2xl": "1rem",
+                    "3xl": "1.5rem"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "unit": "8px",
+                    "gutter": "24px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "20px",
+                    "section-spacing": "120px"
+            },
+            "fontFamily": {
+                    "display-lg-mobile": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-sm": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "label-sm": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "display-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "label-md": [
+                            "Plus Jakarta Sans"
+                    ]
+            },
+            "fontSize": {
+                    "display-lg-mobile": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-md": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-sm": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-sm": [
+                            "12px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "display-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "letterSpacing": "0.01em",
+                                    "fontWeight": "600"
+                            }
+                    ]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined[data-weight="fill"] {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Soft Ambient Shadow */
+        .ambient-shadow {
+            box-shadow: 0 20px 40px -10px rgba(36, 54, 36, 0.08); /* Primary green tint */
+        }
+        .ambient-shadow-hover:hover {
+            box-shadow: 0 30px 50px -12px rgba(36, 54, 36, 0.12);
+            transform: translateY(-4px);
+        }
+        .transition-organic {
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-secondary-container selection:text-on-secondary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto z-50">
+<!-- Brand -->
+<a class="text-headline-sm font-headline-sm tracking-tight text-primary dark:text-primary-fixed hover:text-secondary dark:hover:text-secondary-fixed transition-all duration-300 scale-95 active:scale-90 transition-transform duration-200" href="#">
+                PAW STAY
+            </a>
+<!-- Desktop Nav -->
+<ul class="hidden md:flex gap-8 items-center">
+<li><a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface hover:text-secondary transition-colors hover:text-secondary dark:hover:text-secondary-fixed transition-all duration-300" href="#">Про нас</a></li>
+<li><a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim font-bold border-b-2 border-secondary pb-1 hover:text-secondary dark:hover:text-secondary-fixed transition-all duration-300" href="#">Номери</a></li>
+<li><a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface hover:text-secondary transition-colors hover:text-secondary dark:hover:text-secondary-fixed transition-all duration-300" href="#">Послуги</a></li>
+<li><a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface hover:text-secondary transition-colors hover:text-secondary dark:hover:text-secondary-fixed transition-all duration-300" href="#">Контакти</a></li>
+</ul>
+<!-- Actions -->
+<div class="flex items-center gap-4">
+<button class="font-label-md text-label-md bg-secondary text-on-secondary px-6 py-2.5 rounded-full hover:bg-secondary/90 transition-colors shadow-sm scale-95 active:scale-90 transition-transform duration-200">
+                    Забронювати
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-[100px]">
+<!-- Hero Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-16 md:py-24 max-w-container-max mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6">Комфорт на будь-який смак</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                    Ми створили простори, де кожен гість відчуватиме себе як вдома. Від затишних стандартних номерів до розкішних люксів — оберіть ідеальне місце для вашого улюбленця.
+                </p>
+</div>
+</section>
+<!-- Room Catalog (Bento-ish Grid) -->
+<section class="px-margin-mobile md:px-margin-desktop pb-section-spacing max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Room Card 1: Standard (Col span 12 or 4 depending on layout logic, let's go 4 for full width row, or 6 for masonary) -->
+<!-- Let's use a 4-4-4 grid for desktop to show them side by side -->
+<article class="col-span-1 lg:col-span-4 bg-surface-lowest rounded-3xl ambient-shadow ambient-shadow-hover transition-organic overflow-hidden flex flex-col border border-surface-container-high group">
+<div class="relative h-64 overflow-hidden">
+<img alt="Standard Room" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="A clean, cozy standard pet boarding room. The space is illuminated by soft, warm natural light coming from a small window. It features a comfortable beige pet bed on a pristine wooden floor, surrounded by neutral tones of earthy brown and soft white. The aesthetic is contemporary organic, focusing on comfort and cleanliness in a high-end pet hotel environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5eP2VT8Mb3szXhoow3avq9SdDFr2r2ytxx49sA7EkWnWOKViejbqVzuh3gcPSe01SjlRlzn4Cu5o7r6wGuwb7X27KsEo1mNKlhGFu3V508KeoHdj4LEYkj6lxinhxaqovTNpc9QHThdfxlg-yBKPeaqAg-T4VXC6dw13unDjJAcCy_fPvdJwIIlrGPasVJIEyMPEwo1AKnH8KCokum3Kp0bdm-BpgZ-Il23ykUqnK1rhn4nS_lJsD7NjBIWzip6vo-1LFJWTOeLs"/>
+<div class="absolute top-4 right-4 bg-surface/90 backdrop-blur-sm px-3 py-1 rounded-full border border-surface-container">
+<span class="font-label-sm text-label-sm text-primary">Доступно</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Стандарт</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Затишний простір для спокійного відпочинку.</p>
+</div>
+</div>
+<div class="space-y-3 mb-8 flex-grow">
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary" data-icon="square_foot">square_foot</span>
+<span class="font-body-md text-body-md">Площа: 4 м²</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary" data-icon="pets">pets</span>
+<span class="font-body-md text-body-md">2 вигули на день</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary" data-icon="toys">toys</span>
+<span class="font-body-md text-body-md">Базовий набір іграшок</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-auto pt-4 border-t border-surface-variant">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">від</span>
+<span class="font-headline-md text-headline-sm text-primary">500 ₴<span class="font-body-md text-body-md text-on-surface-variant">/доба</span></span>
+</div>
+<button class="font-label-md text-label-md bg-transparent border border-primary text-primary px-6 py-2.5 rounded-full hover:bg-primary hover:text-on-primary transition-colors">
+                                Забронювати
+                            </button>
+</div>
+</div>
+</article>
+<!-- Room Card 2: Superior -->
+<article class="col-span-1 lg:col-span-4 bg-surface-lowest rounded-3xl ambient-shadow ambient-shadow-hover transition-organic overflow-hidden flex flex-col border border-surface-container-high group">
+<div class="relative h-64 overflow-hidden">
+<img alt="Superior Room" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="A spacious, upgraded pet suite in a luxury boarding facility. The room features a larger, premium orthopedic dog bed with soft textured blankets. Ambient lighting highlights the smooth wooden floors and light beige walls. A small interactive toy area is visible. The atmosphere is warm, inviting, and sophisticated, embodying a contemporary organic style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuvJ-LtYT_RiGTGTHsyVChfpuU23rUz6xMh7tlOnRScjIhwpeQohCxwCbSrIbRWGqzBqSX1_3y3tsS4frXBjRjUBnwoi0eKttP79WfDBDmAbR1t3kc_pgoJpwEaEGN7QI3Vl_81iTXsX_0Ur9kI4pLcAO1z6QPswqWz3WBSbFgiYlgvQDgSFUdP32eMJIKwNLzYxzHtwD7owFkYQdpccAvuGilYC2vm-sMugacqbLGyAs9aXYAa4LpyI0M621yKrtfiL45sJqMQ20"/>
+<div class="absolute top-4 right-4 bg-secondary-container text-on-secondary-fixed px-3 py-1 rounded-full">
+<span class="font-label-sm text-label-sm font-semibold">Популярне</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Покращений</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Більше простору та уваги для активних хвостиків.</p>
+</div>
+</div>
+<div class="space-y-3 mb-8 flex-grow">
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary" data-icon="square_foot">square_foot</span>
+<span class="font-body-md text-body-md">Площа: 6 м²</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary" data-icon="pets">pets</span>
+<span class="font-body-md text-body-md">3 вигули на день + активності</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary" data-icon="toys">toys</span>
+<span class="font-body-md text-body-md">Преміум іграшки</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary" data-icon="videocam">videocam</span>
+<span class="font-body-md text-body-md">Фото-звіт раз на день</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-auto pt-4 border-t border-surface-variant">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">від</span>
+<span class="font-headline-md text-headline-sm text-primary">800 ₴<span class="font-body-md text-body-md text-on-surface-variant">/доба</span></span>
+</div>
+<button class="font-label-md text-label-md bg-secondary text-on-secondary px-6 py-2.5 rounded-full hover:bg-secondary/90 transition-colors shadow-sm">
+                                Забронювати
+                            </button>
+</div>
+</div>
+</article>
+<!-- Room Card 3: Luxe -->
+<article class="col-span-1 lg:col-span-4 bg-surface-lowest rounded-3xl ambient-shadow ambient-shadow-hover transition-organic overflow-hidden flex flex-col border border-surface-container-high group relative">
+<div class="absolute inset-0 border-2 border-secondary/20 rounded-3xl pointer-events-none z-10"></div>
+<div class="relative h-64 overflow-hidden">
+<img alt="Luxe Room" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="A luxurious, top-tier pet apartment resembling a high-end human hotel room. It boasts a miniature sofa, soft ambient mood lighting, and large windows with a nature view. The color palette is rich with deep forest greens, warm golds, and bright whites. A web camera is subtly mounted on the wall. The style is strictly contemporary organic, exuding premium comfort." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-F9-UzgxjfQunhlacdxBQvUySEQLUZ6seYr4OI40JNIkKHU00QCPc5Y2ZKK9nr-wvPOxkGQgaus04D3XcAHzBlwyNxI7eSGhMlZFqUCHWLsgkH45D9yR2IUHMR0zB9C1bJsuaNRbGQqwmej5SsLTrUPc9Pej9AIDOi1rWcfFZVEFszFvjedihinvBZoRlRVfhuH49PsCT8MDiqYKxa_l7dY7ZRFi_5W9EFhJz2LcUSi2RGGtkK4Y_LFzE6qPBVYxBwIL6FUPzg5g"/>
+<div class="absolute top-4 right-4 bg-tertiary text-on-tertiary px-3 py-1 rounded-full">
+<span class="font-label-sm text-label-sm font-semibold">Преміум</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow bg-surface-bright">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Люкс</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Максимальний комфорт та цілодобовий зв'язок.</p>
+</div>
+</div>
+<div class="space-y-3 mb-8 flex-grow">
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary" data-icon="square_foot">square_foot</span>
+<span class="font-body-md text-body-md">Площа: 10 м²</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary" data-icon="pets">pets</span>
+<span class="font-body-md text-body-md">Індивідуальний графік вигулу</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary" data-icon="toys">toys</span>
+<span class="font-body-md text-body-md">Інтерактивні розвиваючі ігри</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary" data-icon="videocam">videocam</span>
+<span class="font-body-md text-body-md">24/7 відеонагляд для власника</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-auto pt-4 border-t border-surface-variant">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">від</span>
+<span class="font-headline-md text-headline-sm text-primary">1500 ₴<span class="font-body-md text-body-md text-on-surface-variant">/доба</span></span>
+</div>
+<button class="font-label-md text-label-md bg-primary text-on-primary px-6 py-2.5 rounded-full hover:bg-primary/90 transition-colors shadow-sm">
+                                Забронювати
+                            </button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="bg-surface-container-low py-16 md:py-24">
+<div class="px-margin-mobile md:px-margin-desktop max-w-3xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Часті запитання</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Усе, що потрібно знати про умови проживання вашого улюбленця.</p>
+</div>
+<div class="space-y-4">
+<!-- FAQ Item 1 -->
+<div class="bg-surface rounded-2xl p-6 ambient-shadow cursor-pointer group" onclick="this.classList.toggle('active-faq')">
+<div class="flex justify-between items-center">
+<h4 class="font-headline-sm text-body-lg text-primary font-semibold group-hover:text-secondary transition-colors">Що потрібно мати при собі для заселення?</h4>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform duration-300 transform group-[.active-faq]:rotate-180" data-icon="expand_more">expand_more</span>
+</div>
+<div class="hidden group-[.active-faq]:block mt-4 text-on-surface-variant font-body-md text-body-md">
+<p>Для оформлення необхідний ветеринарний паспорт з актуальними відмітками про щеплення (комплексна вакцина та сказ), а також обробка від паразитів не пізніше ніж за тиждень до заїзду. Рекомендуємо взяти улюблену лежанку або іграшку для швидшої адаптації.</p>
+</div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="bg-surface rounded-2xl p-6 ambient-shadow cursor-pointer group" onclick="this.classList.toggle('active-faq')">
+<div class="flex justify-between items-center">
+<h4 class="font-headline-sm text-body-lg text-primary font-semibold group-hover:text-secondary transition-colors">Як відбувається харчування?</h4>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform duration-300 transform group-[.active-faq]:rotate-180" data-icon="expand_more">expand_more</span>
+</div>
+<div class="hidden group-[.active-faq]:block mt-4 text-on-surface-variant font-body-md text-body-md">
+<p>Ми дотримуємося звичного раціону вашого улюбленця. Ви привозите корм, до якого звикла тварина, а ми годуємо за вашим графіком. Якщо тварина на натуральному харчуванні, ми маємо спеціальні холодильники для зберігання та можемо розігрівати їжу.</p>
+</div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="bg-surface rounded-2xl p-6 ambient-shadow cursor-pointer group" onclick="this.classList.toggle('active-faq')">
+<div class="flex justify-between items-center">
+<h4 class="font-headline-sm text-body-lg text-primary font-semibold group-hover:text-secondary transition-colors">Чи можна відвідувати тварину під час її перебування?</h4>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform duration-300 transform group-[.active-faq]:rotate-180" data-icon="expand_more">expand_more</span>
+</div>
+<div class="hidden group-[.active-faq]:block mt-4 text-on-surface-variant font-body-md text-body-md">
+<p>Задля уникнення зайвого стресу у тварин, ми не рекомендуємо відвідування в середині терміну проживання. Це може викликати помилкове відчуття, що ви забираєте їх додому. Проте ви завжди можете замовити відеодзвінок або обрати номер класу Люкс з цілодобовим доступом до камери.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-surface-container-highest w-full rounded-t-xl mt-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop py-12 max-w-container-max mx-auto">
+<!-- Brand Column -->
+<div class="flex flex-col gap-4">
+<span class="text-headline-sm font-headline-sm text-primary dark:text-primary-fixed">PAW STAY</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Преміальний готель для ваших улюбленців. Дім далеко від дому.</p>
+</div>
+<!-- Links Column -->
+<div class="flex flex-col gap-3">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Про нас</a>
+<a class="font-body-md text-body-md text-secondary font-bold hover:underline transition-all underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Номери</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Послуги</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Контакти</a>
+</div>
+<!-- Social/Copyright Column -->
+<div class="flex flex-col gap-4 justify-between">
+<div class="flex gap-4">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Instagram</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Facebook</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Telegram</a>
+</div>
+<p class="font-body-md text-body-md text-on-surface dark:text-on-surface-variant mt-auto">© 2024 PAW STAY. Всі права захищені.</p>
+</div>
+</div>
+</footer>
+</body></html>
