@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html class="light" lang="uk"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PAW STAY - Бронювання та Контакти</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-on-surface": "#f3f0ef",
+                      "surface-bright": "#fcf9f8",
+                      "primary": "#243624",
+                      "tertiary-fixed-dim": "#c9c6c1",
+                      "on-secondary-fixed": "#2c1600",
+                      "on-primary-fixed-variant": "#394b38",
+                      "on-primary-container": "#a7bda4",
+                      "secondary-container": "#ffca98",
+                      "surface-container": "#f0eded",
+                      "background": "#fcf9f8",
+                      "on-surface-variant": "#434842",
+                      "on-background": "#1c1b1b",
+                      "inverse-surface": "#313030",
+                      "tertiary-fixed": "#e6e2dd",
+                      "surface-container-low": "#f6f3f2",
+                      "secondary": "#7d562d",
+                      "tertiary": "#33322f",
+                      "primary-container": "#3a4d39",
+                      "on-secondary": "#ffffff",
+                      "on-secondary-fixed-variant": "#623f18",
+                      "surface-container-lowest": "#ffffff",
+                      "secondary-fixed-dim": "#f0bd8b",
+                      "error-container": "#ffdad6",
+                      "on-tertiary-container": "#bab7b2",
+                      "tertiary-container": "#494845",
+                      "primary-fixed-dim": "#b7cdb2",
+                      "on-error": "#ffffff",
+                      "on-secondary-container": "#7a532a",
+                      "error": "#ba1a1a",
+                      "on-tertiary": "#ffffff",
+                      "surface-tint": "#50634e",
+                      "on-primary-fixed": "#0e1f0f",
+                      "secondary-fixed": "#ffdcbd",
+                      "on-tertiary-fixed": "#1c1c19",
+                      "outline": "#747871",
+                      "on-surface": "#1c1b1b",
+                      "surface-variant": "#e5e2e1",
+                      "inverse-primary": "#b7cdb2",
+                      "surface-container-highest": "#e5e2e1",
+                      "on-error-container": "#93000a",
+                      "surface-dim": "#dcd9d9",
+                      "outline-variant": "#c3c8bf",
+                      "surface-container-high": "#eae7e7",
+                      "primary-fixed": "#d2e9ce",
+                      "surface": "#fcf9f8",
+                      "on-tertiary-fixed-variant": "#484743",
+                      "on-primary": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1280px",
+                      "unit": "8px",
+                      "gutter": "24px",
+                      "margin-desktop": "64px",
+                      "margin-mobile": "20px"
+              },
+              "fontFamily": {
+                      "display-lg-mobile": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-sm": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "label-sm": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "display-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "label-md": [
+                              "Plus Jakarta Sans"
+                      ]
+              },
+              "fontSize": {
+                      "display-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        .glass-card {
+            background: rgba(252, 249, 248, 0.85);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(229, 226, 225, 0.5);
+            box-shadow: 0 20px 40px -10px rgba(36, 54, 36, 0.05);
+        }
+        .form-input {
+            background-color: theme('colors.surface-container-low');
+            border-color: theme('colors.outline-variant');
+            transition: all 0.3s ease;
+        }
+        .form-input:focus {
+            border-color: theme('colors.primary');
+            box-shadow: 0 0 0 1px theme('colors.primary');
+            background-color: theme('colors.surface-bright');
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md shadow-sm dark:shadow-none z-50">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto z-50">
+<div class="text-headline-sm font-headline-sm tracking-tight text-primary dark:text-primary-fixed">
+                PAW STAY
+            </div>
+<div class="hidden md:flex space-x-8">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface hover:text-secondary transition-colors hover:text-secondary dark:hover:text-secondary-fixed transition-all duration-300" href=\"about.html\">Про нас</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface hover:text-secondary transition-colors hover:text-secondary dark:hover:text-secondary-fixed transition-all duration-300" href=\"rooms.html\">Номери</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-surface hover:text-secondary transition-colors hover:text-secondary dark:hover:text-secondary-fixed transition-all duration-300" href=\"services.html\">Послуги</a>
+<a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim font-bold border-b-2 border-secondary pb-1 hover:text-secondary dark:hover:text-secondary-fixed transition-all duration-300" href=\"contact.html\">Контакти</a>
+</div>
+<button class="hidden md:block bg-primary text-on-primary font-label-md text-label-md px-6 py-2 rounded-full hover:bg-primary-container hover:text-on-primary-container transition-colors shadow-sm scale-95 active:scale-90 transition-transform duration-200">
+                Забронювати
+            </button>
+<!-- Mobile Menu Button -->
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow pt-[100px] pb-margin-desktop">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="mb-12 md:mb-16 text-center md:text-left">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-4">Бронювання та Контакти</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Залиште заявку на проживання вашого улюбленця або зв'яжіться з нами для отримання додаткової інформації.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
+<!-- Left: Booking Form -->
+<div class="glass-card rounded-xl p-8 md:p-10 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary-container/20 rounded-bl-full -z-10"></div>
+<h2 class="font-headline-md text-headline-md text-primary mb-8">Запит на бронювання</h2>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="name">Ваше ім'я</label>
+<input class="form-input w-full rounded-lg px-4 py-3 font-body-md text-body-md text-on-surface focus:outline-none" id="name" placeholder="Іван Іванов" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="phone">Телефон</label>
+<input class="form-input w-full rounded-lg px-4 py-3 font-body-md text-body-md text-on-surface focus:outline-none" id="phone" placeholder="+38 (000) 000-00-00" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="breed">Порода улюбленця</label>
+<input class="form-input w-full rounded-lg px-4 py-3 font-body-md text-body-md text-on-surface focus:outline-none" id="breed" placeholder="Наприклад, Лабрадор" type="text"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="checkin">Дата заїзду</label>
+<input class="form-input w-full rounded-lg px-4 py-3 font-body-md text-body-md text-on-surface focus:outline-none text-on-surface-variant" id="checkin" type="date"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="checkout">Дата виїзду</label>
+<input class="form-input w-full rounded-lg px-4 py-3 font-body-md text-body-md text-on-surface focus:outline-none text-on-surface-variant" id="checkout" type="date"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="comment">Коментар (особливості харчування, звички)</label>
+<textarea class="form-input w-full rounded-lg px-4 py-3 font-body-md text-body-md text-on-surface focus:outline-none resize-none" id="comment" placeholder="Додайте важливі деталі..." rows="4"></textarea>
+</div>
+<button class="w-full bg-secondary text-on-secondary font-label-md text-label-md py-4 rounded-lg hover:bg-secondary-container hover:text-on-secondary-container transition-all duration-300 shadow-md hover:shadow-lg flex justify-center items-center gap-2" type="button">
+<span>Надіслати запит</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">send</span>
+</button>
+</form>
+</div>
+<!-- Right: Contact Info & Map -->
+<div class="flex flex-col gap-gutter">
+<!-- Contact Info Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter">
+<div class="bg-surface-container-low rounded-xl p-6 border border-surface-variant hover:-translate-y-1 transition-transform duration-300">
+<div class="w-12 h-12 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Адреса</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">м. Вінниця<br/>вул. Соборна, 123</p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-6 border border-surface-variant hover:-translate-y-1 transition-transform duration-300">
+<div class="w-12 h-12 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Зв'язок</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-1">+38 (067) 123-45-67</p>
+<p class="font-body-md text-body-md text-on-surface-variant">hello@pawstay.vn.ua</p>
+</div>
+</div>
+<!-- Map -->
+<div class="flex-grow rounded-xl overflow-hidden min-h-[300px] border border-surface-variant relative shadow-sm">
+<img alt="Map" class="w-full h-full object-cover" data-alt="A stylized, clean digital map showing a location pin in a city setting. The map uses a light, warm beige and soft green color palette consistent with a contemporary organic design system. The streets are subtle lines on a light background, and a prominent dark green marker indicates the destination. The overall mood is clear, helpful, and inviting." data-location="Vinnytsia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaiKRyAB6d8JBVTfd-XBuMKa7eLgOanDwh7M4wF7liXUwVHciOdNEqzsVI0YWfWn_k9jYF3W4-2XyUu1cM1gjMuaidXHCPotNWfCyCn8FE9LTNAQ9mmzb2lMUoN1_wc3plJY0JBMgVT9R9XIzo54iQj34_8bVOURFak05VMaCyLPYuQ9nVIsQXnmoE7KE7-36sC4STpT0hw9po6IM5iXGkIu7dGDnSxsGh7dPKcDpRYbR2CJKce-yHtztCIMAkOtOeh1C1VsYf0cU"/>
+<div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-xl bg-surface-container dark:bg-surface-container-highest flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop py-12 max-w-container-max mx-auto">
+<div class="flex flex-col gap-4">
+<div class="text-headline-sm font-headline-sm text-primary dark:text-primary-fixed">
+                    PAW STAY
+                </div>
+<p class="font-body-md text-body-md text-on-surface dark:text-on-surface-variant">
+                    © 2024 PAW STAY. Всі права захищені.
+                </p>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="font-label-md text-label-md text-primary mb-2">Навігація</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href=\"about.html\">Про нас</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href=\"rooms.html\">Номери</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href=\"services.html\">Послуги</a>
+<a class="font-body-md text-body-md text-secondary font-bold hover:underline transition-all underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href=\"contact.html\">Контакти</a>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="font-label-md text-label-md text-primary mb-2">Соціальні мережі</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all underline-offset-4 opacity-80 hover:opacity-100 transition-opacity flex items-center gap-2" href="#">
+                    Instagram
+                </a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all underline-offset-4 opacity-80 hover:opacity-100 transition-opacity flex items-center gap-2" href="#">
+                    Facebook
+                </a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all underline-offset-4 opacity-80 hover:opacity-100 transition-opacity flex items-center gap-2" href="#">
+                    Telegram
+                </a>
+</div>
+</div>
+</footer>
+</body></html>
